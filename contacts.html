@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
+        <meta name="description" content="Можливість залишення зворотнього звʼязку."/>
+        <title>Лабораторна 2 - Контакти</title>
+        <link rel="icon" href="assets/images/favicon-16x16.png"/>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+        <header class="site-header">
+            <h1 id="site-title">Мій перший лендінг</h1>
+            <nav class="site-nav" aria-label="Головна навігація">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="about.html">Про нас</a></li>
+                    <li><a href="contacts.html" aria-current="page">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="main">
+            <h2>Звʼяжіться з нами</h2>
+
+            <form action="#" method="post" class="contact-form" aria-labelledby="contact-form-title">
+                <h3 id="contact-form-title">Форма зворотнього звʼязку</h3>
+
+                <div class="form-row">
+                    <label for="name">Імʼя</label>
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Ваше імʼя"
+                        required
+                        minlength="2"
+                        maxlength="50"
+                        pattern="^[А-Яа-яЇїІіЄєҐґA-Za-z\s\-ʼ]+$"
+                        title="Імʼя може містити лише літери, апостроф або дефіс"
+                    />
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Ваш email"
+                        required
+                    />
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Телефон</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="+380XXXXXXXXX"
+                        required
+                        pattern="^(\+?38)?\s?0\d{2}\s?\d{3}\s?\d{2}\s?\d{2}$"
+                        title="Введіть номер у форматі +380XXXXXXXXX"
+                    />
+                </div>
+
+                <div class="form-row">
+                    <label for="msg">Повідомлення</label>
+                    <textarea
+                        id="msg"
+                        name="msg"
+                        placeholder="Ваше повідомлення"
+                        rows="5"
+                        required
+                        minlength="10"
+                        maxlength="500"
+                    ></textarea>
+                </div>
+
+                <button type="submit">Надіслати</button>
+            </form>
+
+            <section aria-labelledby="contacts-title" class="contacts-block">
+                <h3 id="contacts-title">Наші контакти</h3>
+                <address>
+                    <p>Email: <a href="mailto:isharoma97@gmail.com">isharoma97@gmail.com</a></p>
+                    <p>Телефон: <a href="tel:+380993935728">+38 (050) 393-57-28</a></p>
+                    <p>Адреса: м. Запоріжжя, вул. Університетська, 65</p>
+                </address>
+            </section>
+        </main>
+
+        <aside class="sidebar" aria-label="Додаткова інформація">
+            <h3>Соціальні мережі</h3>
+            <ul>
+                <li><a href="#" aria-label="Ми у Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Ми у Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Ми у LinkedIn">LinkedIn</a></li>
+            </ul>
+        </aside>
+
+        <footer class="site-footer">
+            <p>©️ 2026 6.1214-пі-2</p>
+        </footer>
+    </body>
+</html>
