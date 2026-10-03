@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
+        <meta name="description" content="Детальна інформація про компанію."/>
+        <title>Лабораторна 2 - Про нас</title>
+        <link rel="icon" href="assets/images/favicon-16x16.png"/>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+        <header class="header">
+            <h1 id="header__title">Мій перший лендінг</h1>
+            <nav class="navigation" aria-label="Головна навігація">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="index.html" aria-current="page">Головна</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="about.html">Про нас</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="main">
+            <article class="about-article">
+                <h2 class="about-article__title">Про нашу команду</h2>
+                <p class="about-article__text">Ми - команда студентів, що створює навчальний веб-проєкт у межах курсу "Веб-програмування (1 семестр)."</p>
+            </article>
+
+            <section aria-labelledby="skills-title" class="skills">
+                <h3 id="skills__title">Наші навички</h3>
+                <ul class="skills__list">
+                    <li class="skills_item">HTML, семантика, доступність</li>
+                    <li class="skills_item">CSS, адаптивна верстка</li>
+                    <li class="skills_item">JavaScript, робота з DOM</li>
+                </ul>
+            </section>
+        </main>
+
+        <aside class="sidebar sidebar--values" aria-label="Додаткова інформація">
+            <h3 class="sidebar__title">Цінності</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">Якість коду та прозорість</li>
+                <li class="sidebar__item">Навчання через практику</li>
+                <li class="sidebar__item">Комунікація та підтримка</li>
+            </ul>
+        </aside>
+
+        <footer class="footer">
+            <p class="footer__text">©️ 2026 6.1214-пі-2</p>
+        </footer>
+    </body>
+</html>

@@ -3,10 +3,78 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initital-scale=1.0"/>
-        <title>Лабораторна 1</title>
+        <meta name="description" content="Головна сторінка навчального лендінгу: новини, послуги, переваги."/>
+        <title>Лабораторна 2 - Головна</title>
+        <link rel="icon" href="assets/images/favicon-16x16.png"/>
+        <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <p>Студент: Ісхаков Роман</p>
-        <p>Група: 6.1214-2</p>
+        <a class="skip-link" href="#main">Перейти до основного контенту</a>
+
+        <header class="header">
+            <h1 id="header__title">Мій перший лендінг</h1>
+            <nav class="navigation" aria-label="Головна навігація">
+                <ul class="navigation__list">
+                    <li class="navigation__item"><a class="navigation__link" href="index.html" aria-current="page">Головна</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="about.html">Про нас</a></li>
+                    <li class="navigation__item"><a class="navigation__link" href="contacts.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main id="main">
+            <article class="article">
+                <h2 class="article__title">Новини</h2>
+                <p class="article__text">Ісхаков Роман Олегович почав роботу над HTML-каркасом.</p>
+                <figure class="media article__media media--framed">
+                    <img
+                        class="media__img"
+                        src="assets/images/placeholder.jpg"
+                        alt="Фото студента"
+                        width="640"
+                        loading="lazy"
+                        decoding="async"
+                    />
+                    <figcaption class="media__caption">Це зображення для новини</figcaption>
+                </figure>
+            </article>
+            <section aria-labelledby="services-title" class="services">
+                <h3 class="services__title" id="services-title">Наші послуги</h3>
+                <table class="services__table">
+                    <thead>
+                        <tr class="services__row">
+                            <th class="services_header" scope="col">Послуга</th>
+                            <th class="services_header" scope="col">Опис</th>
+                            <th class="services_header" scope="col">Ціна</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="services__row">
+                            <td class="services_cell">Розробка сайту</td>
+                            <td class="services_cell">Лендінг або невеликий корпоративний сайт</td>
+                            <td class="services_cell">500 $</td>
+                        </tr>
+                        <tr class="services__row">
+                            <td class="services_cell">SEO-оптимізація</td>
+                            <td class="services_cell">Базовий аудит та покращення видимості</td>
+                            <td class="services_cell">300 $</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <aside class="sidebar sidebar--links" aria-label="Додаткова інформація">
+            <h3 class="sidebar__title">Корисні посилання</h3>
+            <ul class="sidebar__list">
+                <li class="sidebar__item">
+                    <a href="https://developer.mozilla.org/" target="_blank" rel="noopener noreferrer" class="sidebar__link">MDN Web Docs</a>
+                </li>
+            </ul>
+        </aside>
+
+        <footer class="footer">
+            <p class="footer__text">©️ 2026 6.1214-пі-2</p>
+        </footer>
     </body>
 </html>
