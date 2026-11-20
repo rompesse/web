@@ -1,5 +1,6 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import handlebars from 'vite-plugin-handlebars';
 
 export default defineConfig({
     input: {
@@ -7,5 +8,21 @@ export default defineConfig({
         about: resolve(import.meta.dirname, 'about.html'),
         contacts: resolve(import.meta.dirname, 'contacts.html')
     },
-    resolve: { alias: { '@': resolve(import.meta.dirname, 'src') } }
+    resolve: { alias: { '@': resolve(import.meta.dirname, 'src') } },
+    plugins: [
+        handlebars({
+            partialDirectory: resolve(
+                import.meta.dirname,
+                'src',
+                'partials'
+            ),
+
+            context: {
+                siteName: 'Лабораторна 6',
+                labName: 'Лабораторна № 6'
+            },
+
+            reloadOnPartialChange: true,
+        })
+    ]
 });
