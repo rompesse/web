@@ -1,0 +1,29 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rompesse/web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/rompesse/web/issues"
+  },
+  "homepage": "https://github.com/rompesse/web#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.7.0",
+    "postcss": "^8.5.33",
+    "sass-embedded": "^1.108.2",
+    "vite": "^8.3.8"
+  }
+}
