@@ -1,4 +1,4 @@
-import { resolve } from 'path';
+import { resolve, dirname } from 'node:path';
 import { defineConfig } from 'vite';
 import handlebars from 'vite-plugin-handlebars';
 import { fileURLToPath } from 'node:url';
